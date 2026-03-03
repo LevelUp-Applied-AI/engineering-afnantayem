@@ -1,28 +1,29 @@
 What changed
 
-Briefly describe the main changes introduced in this PR.
-Mention updated files, added features, refactoring, or bug fixes.
-If relevant, explain what was removed or modified and why.
+Added PR hygiene structure (PR template and self-review checklist).
+Added docs/pr-checklist.md for pre-PR verification.
+Updated README.md with a How to run section explaining environment setup and execution steps.
+Fixed environment setup issues related to pytest configuration.
 
 Why
 
-Explain the problem this PR is solving.
-What was not working before?
-Is this related to a specific issue, requirement, or improvement in code quality or structure?
+Improve pull request quality and review clarity.
+Ensure contributors verify correctness before opening a PR.
+Provide clear instructions for running and testing the project.
+Resolve setup issues that previously caused pytest to fail.
 
 How to test
 
-Provide clear steps to verify the changes:
-Pull this branch.
-Install dependencies (if needed).
-Run the project or specific script.
-Trigger the feature or scenario affected.
-Confirm the expected behavior occurs and no errors appear.
-Mention any edge cases that should also be checked.
+Pull the branch locally.
+Activate the virtual environment.
+Install dependencies using pip install -r requirements.txt.
+Run pytest and confirm all tests pass.
+Follow the How to run section in the README and verify the project runs without errors.
 
 Checklist
 
- - [ ]I tested the changes locally and confirmed they work as expected
- - [ ]I did not break existing functionality
- - [ ]I removed unnecessary debug prints or commented code
- - [ ]I updated documentation (if needed)
+ - [ ] The code does what the PR title claims.
+ - [ ] All tests pass locally.
+ - [ ] Documentation (README) reflects the changes.
+ - [ ] No debug artifacts (print statements, breakpoints).
+ - [ ] This PR contains one logical change and is not mixing unrelated updates.
