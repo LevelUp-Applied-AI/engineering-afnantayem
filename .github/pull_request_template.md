@@ -22,7 +22,7 @@ Mention any edge cases that should also be checked.
 
 Checklist
 
- I tested the changes locally and confirmed they work as expected
- I did not break existing functionality
- I removed unnecessary debug prints or commented code
- I updated documentation (if needed)
+ - [ ]I tested the changes locally and confirmed they work as expected
+ - [ ]I did not break existing functionality
+ - [ ]I removed unnecessary debug prints or commented code
+ - [ ]I updated documentation (if needed)
